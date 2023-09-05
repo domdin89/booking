@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 
 urlpatterns = [
-  
+  path('services', views.ServiceList.as_view()),
+  path('service/<int:pk>', views.ServiceDetail.as_view()),
 ]
