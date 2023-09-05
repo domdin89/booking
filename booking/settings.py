@@ -39,11 +39,13 @@ DEBUG = os.getenv('DEBUG')
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "127.0.0.1:8000",
+    'cozy-griffin-edcf3b.netlify.app',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:8000',
+    'https://cozy-griffin-edcf3b.netlify.app'
 
 ]
 
@@ -52,6 +54,7 @@ CORS_ORIGIN_WHITELIST = [
 
 CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000/',
+    'https://cozy-griffin-edcf3b.netlify.app'
 ]
 
 
