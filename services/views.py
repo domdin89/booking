@@ -48,3 +48,9 @@ class ServiceDetail(APIView):
         service = self.get_obj(pk)
         service.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+
+class Home(APIView):
+
+    def get(request):
+        return render(request, 'services/home.html')

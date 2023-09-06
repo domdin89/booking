@@ -22,4 +22,5 @@ from . import views
 urlpatterns = [
   path('services', views.ServiceList.as_view()),
   path('service/<int:pk>', views.ServiceDetail.as_view()),
+  path('home', views.Home.as_view()),
 ]
